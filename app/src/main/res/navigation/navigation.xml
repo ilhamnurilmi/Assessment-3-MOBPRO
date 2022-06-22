@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/todoFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.ilhamnurilmi.todonoted.ui.todo.TodoFragment"
+        android:label="List Todo"
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_todoFragment_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_todoFragment_to_detailTodoFragment"
+            app:destination="@id/detailTodoFragment" />
+        <action
+            android:id="@+id/action_todoFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailTodoFragment"
+        android:name="com.ilhamnurilmi.todonoted.ui.detailtodo.DetailTodoFragment"
+        android:label="Detail Todo"
+        tools:layout="@layout/fragment_detail_todo" >
+
+        <argument
+            android:name="todoId"
+            app:argType="long" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.ilhamnurilmi.todonoted.ui.addtodo.AddTodoFragment"
+        android:label="Add Todo"
+        tools:layout="@layout/fragment_add_todo" >
+        <action
+            android:id="@+id/action_addTodoFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.ilhamnurilmi.todonoted.ui.tips.TipsFragment"
+        android:label="Tips"
+        tools:layout="@layout/fragment_tips" >
+        <action
+            android:id="@+id/action_tipsFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+        <action
+            android:id="@+id/action_tipsFragment_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+    </fragment>
+</navigation>

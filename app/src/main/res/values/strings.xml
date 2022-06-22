@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Todo Noted</string>
+    <string name="enter_todo_title">Enter Todo Title</string>
+    <string name="add_todo">Add Todo</string>
+    <string name="delete_done">Delete done</string>
+    <string name="example">Example</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="floating_button">Floating Button</string>
+    <string name="msg_title_invalid">Input Task Tidak Boleh Kosong</string>
+    <string name="belum_ada_data">belum ada data</string>
+    <string name="tips_name">Tips Name</string>
+    <string name="description_tips">Description Tips</string>
+    <string name="koneksi_error">Koneksi error</string>
+</resources>
