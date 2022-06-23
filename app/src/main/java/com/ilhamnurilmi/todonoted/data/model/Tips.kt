@@ -1,6 +1,6 @@
 package com.ilhamnurilmi.todonoted.data.model
 
 data class Tips(
-    val name : String,
+    val nama : String,
     val imageId: String,
 )

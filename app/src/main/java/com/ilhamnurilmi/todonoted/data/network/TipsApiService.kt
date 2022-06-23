@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-private const val BASE_URL = "https://raw.githubusercontent.com/indrasz/Telyu-Creative/static-api/"
+private const val BASE_URL = "https://raw.githubusercontent.com/ilhamnurilmi/Static-api/main/"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
@@ -25,8 +25,8 @@ object TipsApi {
     val service: TipsApiService by lazy {
         retrofit.create(TipsApiService::class.java)
     }
-    fun getTipsUrl(name: String): String {
-        return "$BASE_URL$name.png"
+    fun getTipsUrl(nama: String): String {
+        return "$BASE_URL$nama.png"
     }
 }
 enum class ApiStatus { LOADING, SUCCESS, FAILED }

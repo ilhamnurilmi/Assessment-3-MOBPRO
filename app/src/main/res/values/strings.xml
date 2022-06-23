@@ -12,4 +12,12 @@
     <string name="tips_name">Tips Name</string>
     <string name="description_tips">Description Tips</string>
     <string name="koneksi_error">Koneksi error</string>
+
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data quotes otomatis</string>
+
+    <string name="notif_title">Ada Quotes baru!</string>
+    <string name="notif_text">Cek untuk memotivasi harimu!..</string>
+
+
 </resources>

@@ -38,13 +38,13 @@ class TipsAdapter : RecyclerView.Adapter<TipsAdapter.TipsViewHolder>() {
                 .load(TipsApi.getTipsUrl(tips.imageId))
                 .error(R.drawable.ic_baseline_broken_image_24)
                 .into(ivTips)
-            tvTipsName.text = tips.name
+            tvTipsName.text = tips.nama
 
             root.setOnClickListener {
 
                 Snackbar.make(
                     root,
-                    tips.name,
+                    tips.nama,
                     Snackbar.LENGTH_SHORT,
 
                     ).show()
